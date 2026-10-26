@@ -1,0 +1,8 @@
+===== Task 2: Import Test =====
+
+Command:
+  python -c "from EmotionDetection.emotion_detection import emotion_detector; print('Import successful'); print(type(emotion_detector))"
+
+Output:
+  Import successful
+  <class 'function'>

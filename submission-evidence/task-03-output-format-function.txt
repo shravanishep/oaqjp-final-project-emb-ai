@@ -1,0 +1,26 @@
+===== Task 3: Output Format Function =====
+
+The emotion_detector function returns a dictionary with the following structure:
+
+Successful response:
+{
+    'anger': <float>,
+    'disgust': <float>,
+    'fear': <float>,
+    'joy': <float>,
+    'sadness': <float>,
+    'dominant_emotion': '<string>'  # The key with the highest score
+}
+
+Error / blank input response:
+{
+    'anger': None,
+    'disgust': None,
+    'fear': None,
+    'joy': None,
+    'sadness': None,
+    'dominant_emotion': None
+}
+
+The dominant_emotion is determined by:
+    dominant_emotion = max(emotion_scores, key=emotion_scores.get)

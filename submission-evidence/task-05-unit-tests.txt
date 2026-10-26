@@ -1,0 +1,15 @@
+===== Task 5: Unit Tests =====
+File: test_emotion_detection.py
+
+See the full test file in the project root. The tests cover:
+- test_joy_dominant       – "I am glad this happened" → joy
+- test_anger_dominant     – "I am really mad about this" → anger
+- test_disgust_dominant   – "I feel disgusted just hearing about this" → disgust
+- test_sadness_dominant   – "I am so sad about this" → sadness
+- test_fear_dominant      – "I am really afraid that this will happen" → fear
+- test_output_has_all_keys – All 6 keys present in result dictionary
+- test_status_400_returns_none – HTTP 400 returns all None values
+- test_blank_input_returns_none – Blank/whitespace/None input returns all None values
+
+Tests use unittest.mock.patch to mock only the external requests.post call,
+while testing the real parsing logic and dominant-emotion selection.

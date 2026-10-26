@@ -1,0 +1,6 @@
+===== Task 4: Package __init__.py =====
+File: EmotionDetection/__init__.py
+
+"""EmotionDetection package – exposes the emotion_detector function."""
+
+from .emotion_detection import emotion_detector

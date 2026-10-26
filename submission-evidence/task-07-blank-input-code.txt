@@ -1,0 +1,17 @@
+===== Task 7: Blank Input Handling Code =====
+File: server.py + EmotionDetection/emotion_detection.py
+
+1. In emotion_detection.py – blank input is caught before any API call:
+
+    if not text_to_analyze or not text_to_analyze.strip():
+        return none_result
+
+2. In server.py – when dominant_emotion is None, the user sees an error:
+
+    if response['dominant_emotion'] is None:
+        return "Invalid text! Please try again!"
+
+This ensures:
+  - No meaningless API request is made for blank input
+  - The user sees a clear error message
+  - The Flask application does not crash

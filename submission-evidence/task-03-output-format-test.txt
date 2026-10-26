@@ -1,0 +1,11 @@
+===== Task 3: Output Format Test =====
+
+Command:
+  python -c "from EmotionDetection.emotion_detection import emotion_detector; result = emotion_detector(''); print('Blank input result:', result)"
+
+Output:
+  Blank input result: {'anger': None, 'disgust': None, 'fear': None, 'joy': None, 'sadness': None, 'dominant_emotion': None}
+
+Note: Full Watson NLP responses (with real float scores) can only be verified
+inside the IBM Skills Network lab environment. The mocked unit tests verify
+the output structure and dominant-emotion logic.

@@ -1,0 +1,25 @@
+===== Task 5: Unit Test Output =====
+
+Command:
+  python -m unittest test_emotion_detection -v
+
+Output:
+  test_anger_dominant (test_emotion_detection.TestEmotionDetector.test_anger_dominant)
+  'I am really mad about this' should return anger as dominant. ... ok
+  test_blank_input_returns_none (test_emotion_detection.TestEmotionDetector.test_blank_input_returns_none)
+  Blank / whitespace-only input must return all None values. ... ok
+  test_disgust_dominant (test_emotion_detection.TestEmotionDetector.test_disgust_dominant)
+  'I feel disgusted just hearing about this' → disgust. ... ok
+  test_fear_dominant (test_emotion_detection.TestEmotionDetector.test_fear_dominant)
+  'I am really afraid that this will happen' → fear. ... ok
+  test_joy_dominant (test_emotion_detection.TestEmotionDetector.test_joy_dominant)
+  'I am glad this happened' should return joy as dominant. ... ok
+  test_output_has_all_keys (test_emotion_detection.TestEmotionDetector.test_output_has_all_keys)
+  Result dictionary must have all six expected keys. ... ok
+  test_sadness_dominant (test_emotion_detection.TestEmotionDetector.test_sadness_dominant)
+  'I am so sad about this' → sadness. ... ok
+  test_status_400_returns_none (test_emotion_detection.TestEmotionDetector.test_status_400_returns_none)
+  HTTP 400 must return all None values. ... ok
+  ----------------------------------------------------------------------
+  Ran 8 tests in 0.007s
+  OK

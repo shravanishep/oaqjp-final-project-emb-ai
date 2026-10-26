@@ -1,0 +1,28 @@
+===== Task 7: HTTP 400 Handling Code =====
+File: EmotionDetection/emotion_detection.py
+
+The function handles HTTP 400 responses as follows:
+
+    try:
+        response = requests.post(
+            url, json=input_json, headers=header, timeout=10
+        )
+    except requests.exceptions.RequestException:
+        return none_result
+
+    # Handle HTTP 400 – invalid or unprocessable input
+    if response.status_code == 400:
+        return none_result
+
+Where none_result is:
+    none_result = {
+        'anger': None,
+        'disgust': None,
+        'fear': None,
+        'joy': None,
+        'sadness': None,
+        'dominant_emotion': None
+    }
+
+When dominant_emotion is None, the Flask server responds with:
+    "Invalid text! Please try again!"

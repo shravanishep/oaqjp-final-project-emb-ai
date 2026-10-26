@@ -1,0 +1,11 @@
+===== Task 8: Static Code Analysis Output =====
+
+Command: python -m pylint server.py
+Output:
+  Your code has been rated at 10.00/10
+
+Command: python -m pylint EmotionDetection/emotion_detection.py
+Output:
+  Your code has been rated at 10.00/10 (previous run: 9.66/10, +0.34)
+
+Both files achieve a perfect 10.00/10 Pylint score.

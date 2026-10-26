@@ -1,0 +1,10 @@
+===== Task 4: Package Validation =====
+
+Command:
+  python -c "from EmotionDetection.emotion_detection import emotion_detector; print('Import successful'); print(type(emotion_detector))"
+
+Output:
+  Import successful
+  <class 'function'>
+
+The EmotionDetection package is a valid importable Python package.

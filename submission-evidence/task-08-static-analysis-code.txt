@@ -1,0 +1,7 @@
+===== Task 8: Static Code Analysis =====
+
+Tool: pylint (invoked via python -m pylint)
+
+Commands:
+  python -m pylint server.py
+  python -m pylint EmotionDetection/emotion_detection.py

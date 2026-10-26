@@ -1,0 +1,4 @@
+PENDING – Repository not yet created.
+
+Once the GitHub repository is live, record the public README URL here:
+https://github.com/<your-username>/emotion-detector
