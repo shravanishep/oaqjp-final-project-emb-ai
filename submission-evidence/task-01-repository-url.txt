@@ -1,4 +1,1 @@
-PENDING – Repository not yet created.
-
-Once the GitHub repository is live, record the public README URL here:
-https://github.com/<your-username>/emotion-detector
+https://github.com/shravanishep/oaqjp-final-project-emb-ai/blob/master/README.md
